@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CSS Grid Cheat Sheet with examples, templates, and interactive features"
+    />
     <title>CSS Grid Cheat Sheet</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="./scripts.js"></script>
@@ -15,11 +19,14 @@
     </p>
 
     <h2>🔹 Simple Grid Example (3-Column)</h2>
-    <pre><code>.grid-3-column {
+    <figure>
+      <figcaption>Simple Grid Example (3-Column)</figcaption>
+      <pre><code>.grid-3-column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }</code></pre>
+    </figure>
     <div class="grid-3-column">
       <div class="grid-item">Column 1</div>
       <div class="grid-item">Column 2</div>
@@ -27,11 +34,14 @@
     </div>
 
     <h2>🔹 Responsive Layout with Minmax</h2>
-    <pre><code>.grid-responsive {
+    <figure>
+      <figcaption>Responsive Layout with Minmax</figcaption>
+      <pre><code>.grid-responsive {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
 }</code></pre>
+    </figure>
     <div class="grid-responsive">
       <div class="grid-item">Item 1</div>
       <div class="grid-item">Item 2</div>
@@ -40,7 +50,9 @@
     </div>
 
     <h2>🔹 Dashboard Template</h2>
-    <pre><code>.grid-dashboard {
+    <figure>
+      <figcaption>Dashboard Template</figcaption>
+      <pre><code>.grid-dashboard {
   display: grid;
   grid-template-areas:
     'nav nav nav'
@@ -50,6 +62,7 @@
   grid-template-rows: auto 1fr auto;
   gap: 10px;
 }</code></pre>
+    </figure>
     <div class="grid-dashboard">
       <div class="template-box nav">Nav</div>
       <div class="template-box aside">Aside</div>
@@ -58,12 +71,15 @@
     </div>
 
     <h2>🔹 Blog Post Grid Template</h2>
-    <pre><code>.grid-blog {
+    <figure>
+      <figcaption>Blog Post Grid Template</figcaption>
+      <pre><code>.grid-blog {
   display: grid;
   grid-template-areas: 'post1 post2 post3';
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }</code></pre>
+    </figure>
     <div class="grid-blog">
       <div class="grid-item post1">Post 1</div>
       <div class="grid-item post2">Post 2</div>
@@ -71,11 +87,14 @@
     </div>
 
     <h2>🔹 Gallery Grid</h2>
-    <pre><code>.grid-gallery {
+    <figure>
+      <figcaption>Gallery Grid</figcaption>
+      <pre><code>.grid-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 10px;
 }</code></pre>
+    </figure>
     <div class="grid-gallery">
       <div class="grid-item">Image 1</div>
       <div class="grid-item">Image 2</div>
@@ -86,30 +105,38 @@
     </div>
 
     <h2>🔹 Sidebar + Content Layout</h2>
-    <pre><code>.grid-sidebar-content {
+    <figure>
+      <figcaption>Sidebar + Content Layout</figcaption>
+      <pre><code>.grid-sidebar-content {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 10px;
 }</code></pre>
+    </figure>
     <div class="grid-sidebar-content">
       <div class="grid-item">Sidebar</div>
       <div class="grid-item">Main Content</div>
     </div>
 
     <h2>🔹 Centered Card</h2>
-    <pre><code>.grid-centered-card {
+    <figure>
+      <figcaption>Centered Card</figcaption>
+      <pre><code>.grid-centered-card {
   display: grid;
   place-items: center;
   height: 200px;
   background: #fafafa;
   border: 1px solid #ccc;
 }</code></pre>
+    </figure>
     <div class="grid-centered-card">
       <div class="grid-item">Centered Card</div>
     </div>
 
     <h2>🔹 Overlap Example</h2>
-    <pre><code>.grid-overlap {
+    <figure>
+      <figcaption>Overlap Example</figcaption>
+      <pre><code>.grid-overlap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px;
@@ -123,13 +150,16 @@
   grid-column: 2 / 3;
   grid-row: 1 / 3;
 }</code></pre>
+    </figure>
     <div class="grid-overlap">
       <div class="grid-item">Item 1 spans columns</div>
       <div class="grid-item">Item 2 overlaps</div>
     </div>
 
     <h2>🔹 Visual Template with Named Areas</h2>
-    <pre><code>.visual-template {
+    <figure>
+      <figcaption>Visual Template with Named Areas</figcaption>
+      <pre><code>.visual-template {
   display: grid;
   grid-template-areas:
     'header header header'
@@ -139,11 +169,100 @@
   grid-template-rows: auto 1fr auto;
   gap: 10px;
 }</code></pre>
+    </figure>
     <div class="visual-template">
       <div class="template-box header">Header</div>
       <div class="template-box sidebar">Sidebar</div>
       <div class="template-box main">Main Content</div>
       <div class="template-box footer">Footer</div>
+    </div>
+
+    <h2>🔹 Auto-Placement Example</h2>
+    <figure>
+      <figcaption>Auto-Placement Example</figcaption>
+      <pre><code>.grid-auto-placement {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}</code></pre>
+    </figure>
+    <div class="grid-auto-placement">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+    </div>
+
+    <h2>🔹 Nested Grid Example</h2>
+    <figure>
+      <figcaption>Nested Grid Example</figcaption>
+      <pre><code>.grid-nested {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.grid-nested .nested {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}</code></pre>
+    </figure>
+    <div class="grid-nested">
+      <div class="grid-item">Item 1</div>
+      <div class="nested">
+        <div class="grid-item">Nested 1</div>
+        <div class="grid-item">Nested 2</div>
+      </div>
+    </div>
+
+    <h2>🔹 Alignment Example</h2>
+    <figure>
+      <figcaption>Alignment Example</figcaption>
+      <pre><code>.grid-alignment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}</code></pre>
+    </figure>
+    <div class="grid-alignment">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+    </div>
+
+    <h2>🔹 Grid with Auto Rows</h2>
+    <figure>
+      <figcaption>Grid with Auto Rows</figcaption>
+      <pre><code>.grid-auto-rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  gap: 10px;
+}</code></pre>
+    </figure>
+    <div class="grid-auto-rows">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+    </div>
+
+    <h2>🔹 Grid with Fractional Units</h2>
+    <figure>
+      <figcaption>Grid with Fractional Units</figcaption>
+      <pre><code>.grid-fr-units {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+}</code></pre>
+    </figure>
+    <div class="grid-fr-units">
+      <div class="grid-item">2fr</div>
+      <div class="grid-item">1fr</div>
+      <div class="grid-item">1fr</div>
     </div>
 
     <h2>📚 More Resources</h2>
